@@ -13,4 +13,4 @@
 - [ ] Doller/Franc 중복
 - [x] 공용 equals
 - [ ] 공용 times
-- [ ] Franc과 Dollar 비교하기
+- [x] Franc과 Dollar 비교하기
