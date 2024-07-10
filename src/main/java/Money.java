@@ -1,3 +1,3 @@
 public class Money {
-    private int amount;
+    protected int amount;
 }
