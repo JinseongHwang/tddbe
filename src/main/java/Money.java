@@ -22,4 +22,9 @@ public abstract class Money {
     public String currency() {
         return currency;
     }
+
+    public Money(int amount, String currency) {
+        this.amount = amount;
+        this.currency = currency;
+    }
 }
