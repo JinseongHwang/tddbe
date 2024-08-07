@@ -17,8 +17,8 @@ public class Money {
                 && currency().equals(money.currency);
     }
 
-    public Money times(int amount) {
-        return null;
+    public Money times(int multiplier) {
+        return new Money(amount * multiplier, currency);
     }
 
     public String currency() {
