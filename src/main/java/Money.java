@@ -29,4 +29,9 @@ public class Money {
         this.amount = amount;
         this.currency = currency;
     }
+
+    @Override
+    public String toString() {
+        return "Money{" + "amount=" + amount + ", currency='" + currency + '\'' + '}';
+    }
 }
