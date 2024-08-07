@@ -14,7 +14,7 @@ public class Money {
     public boolean equals(Object obj) {
         Money money = (Money) obj;
         return this.amount == money.amount
-                && this.getClass().equals(money.getClass());
+                && currency().equals(money.currency);
     }
 
     public Money times(int amount) {
