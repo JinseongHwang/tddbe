@@ -1,4 +1,4 @@
-public abstract class Money {
+public class Money {
     protected int amount;
     protected String currency;
 
@@ -17,7 +17,9 @@ public abstract class Money {
                 && this.getClass().equals(money.getClass());
     }
 
-    public abstract Money times(int multiplier);
+    public Money times(int amount) {
+        return null;
+    }
 
     public String currency() {
         return currency;
