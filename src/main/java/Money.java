@@ -34,4 +34,8 @@ public class Money {
     public String toString() {
         return "Money{" + "amount=" + amount + ", currency='" + currency + '\'' + '}';
     }
+
+    public Money plus(Money addend) {
+        return new Money(amount + addend.amount, currency);
+    }
 }
