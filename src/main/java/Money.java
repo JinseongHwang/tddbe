@@ -35,6 +35,7 @@ public class Money implements Expression {
         return "Money{" + "amount=" + amount + ", currency='" + currency + '\'' + '}';
     }
 
+    @Override
     public Expression plus(Expression addend) {
         return new Sum(this, addend);
     }
