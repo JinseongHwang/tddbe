@@ -2,7 +2,7 @@ public class Sum implements Expression {
     Expression augend;
     Expression addend;
 
-    public Sum(Money augend, Money addend) {
+    public Sum(Expression augend, Expression addend) {
         this.augend = augend;
         this.addend = addend;
     }
