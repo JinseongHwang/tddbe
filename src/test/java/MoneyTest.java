@@ -36,4 +36,13 @@ public class MoneyTest {
         Money reduced = bank.reduce(sum, "USD"); // 2. 실세계에서 환율이 적용되는 'Bank'를 도입 (유비쿼터스 언어로)
         assertEquals(Money.dollar(10), reduced); // 1. reduced는 Expression에 환율을 적용한 결과의 Expression
     }
+
+    @Test
+    public void testPlusReturnsSum() {
+        Money five = Money.dollar(5);
+        Expression result = five.plus(five);
+        Sum sum = (Sum) result;
+        assertEquals(five, sum.augend);
+        assertEquals(five, sum.addend);
+    }
 }
